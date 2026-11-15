@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10131b"><link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg"><title>Finora — Personal Finance</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar">
+  <div class="brand"><span class="brand-mark">F</span><span>finora</span></div>
+  <div class="side-label" data-i18n="workspace">WORKSPACE</div>
+  <nav id="nav">
+    <button class="nav-item active" data-page="overview"><span>◫</span><b data-i18n="overview">İcmal</b></button>
+    <button class="nav-item" data-page="transactions"><span>⇄</span><b data-i18n="transactions">Əməliyyatlar</b></button>
+    <button class="nav-item" data-page="accounts"><span>▣</span><b data-i18n="accounts">Hesablar</b></button>
+    <button class="nav-item" data-page="budgets"><span>◷</span><b data-i18n="budgets">Büdcələr</b></button>
+    <button class="nav-item" data-page="goals"><span>◎</span><b data-i18n="goals">Məqsədlər</b></button>
+    <button class="nav-item" data-page="debts"><span>⇆</span><b data-i18n="debts">Borclar</b></button>
+    <button class="nav-item" data-page="reports"><span>▥</span><b data-i18n="reports">Hesabatlar</b></button>
+  </nav>
+  <div class="sidebar-bottom">
+    <button class="nav-item" data-page="settings"><span>⚙</span><b data-i18n="settings">Parametrlər</b></button>
+    <div class="local-note"><span class="pulse"></span><span data-i18n="localdata">Məlumatlar cihazda saxlanılır</span></div>
+  </div>
+</aside>
+<main class="main">
+  <header class="topbar"><div><div class="eyebrow" id="today"></div><h1 id="page-title">İcmal</h1></div>
+    <div class="top-actions"><select id="currency-select" aria-label="Currency"><option>AZN</option><option>USD</option><option>EUR</option><option>TRY</option></select><button class="icon-btn" id="theme-toggle" title="Theme">◐</button><button class="avatar" title="Finora">Ə</button></div>
+  </header>
+  <section id="page-content"></section>
+  <footer>FINORA <span>•</span> <span data-i18n="privateworkspace">Şəxsi maliyyə məkanın</span></footer>
+</main>
+</div>
+<div class="modal-backdrop" id="modal-backdrop"><div class="modal" id="modal"></div></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>
